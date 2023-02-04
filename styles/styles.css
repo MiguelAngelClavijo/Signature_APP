@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-/*Section user interface
 
-/*Variables globales*/
+/*Configuración global*/
 :root {
   --primary-color: #1a3e72;
   --primary-hover: #7a9ac8;
@@ -23,9 +22,9 @@ body {
   margin: 0;
 }
 
-::placeholder {
-  font-family: "Montserrat", sans-serif;
-}
+
+/*Estilos del Header*/
+
 
 .header {
   display: flex;
@@ -52,13 +51,15 @@ body {
   font-weight: 400;
 }
 
+/*Estilos del Contenedor principal*/
 .contain {
-  margin: 0px 0 56px 0;
-  padding: 0 272px;
+  margin: 0 0 56px 0;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
+/*Estilos del formulario*/
 .contain form {
   display: flex;
   flex-direction: column;
@@ -111,18 +112,18 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/*Estilos del Contenedor del preview & HTML*/
 .contain .utilities {
   display: flex;
   flex-direction: column;
 }
 
-footer p {
-  margin: 0;
-  text-align: center;
-  width: 100vw;
-  color: var(--secondary-text);
-  font-size: var(--sm);
-}
+/*Estilos del Contenedor preview*/
 
 .preview {
   display: flex;
@@ -131,27 +132,29 @@ footer p {
   border: 1px solid var(--colvatel-primary);
 }
 
+
+/*Estilos del preview*/
+
 .container-deg {
   position: relative;
   height: 200px;
   width: 270px;
   overflow: hidden;
 }
+
 .paralelogramo {
   position: absolute;
-  background: linear-gradient(
-    29.1deg,
-    #1b396a 10.72%,
-    #1a3a6b 32.05%,
-    #183f72 39.62%,
-    #15487e 45.13%,
-    #11548f 49.26%,
-    #0b64a5 53.39%,
-    #086fb3 54.76%,
-    #0d5f9d 60.27%,
-    #174378 70.59%,
-    #1b396a 76.1%
-  );
+  background: linear-gradient(29.1deg,
+      #1b396a 10.72%,
+      #1a3a6b 32.05%,
+      #183f72 39.62%,
+      #15487e 45.13%,
+      #11548f 49.26%,
+      #0b64a5 53.39%,
+      #086fb3 54.76%,
+      #0d5f9d 60.27%,
+      #174378 70.59%,
+      #1b396a 76.1%);
   height: 200px;
   width: 350px;
   position: relative;
@@ -198,9 +201,31 @@ footer p {
   color: var(--colvatel-tertiary);
 }
 
+.text-container a {
+  text-decoration: none;
+}
+#icon-container {
+  margin-top: 10px;
+}
+
 .icon-tel,
 .icon-linkedin {
   margin: 0 20px 0 0;
   width: 30px;
   height: 30px;
+}
+
+/*Estilos del HTML*/
+
+
+
+
+/*Estilos del Footer*/
+
+footer p {
+  margin: 0;
+  text-align: center;
+  width: 100vw;
+  color: var(--secondary-text);
+  font-size: var(--sm);
 }

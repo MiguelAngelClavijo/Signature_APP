@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Signature</title>
-  </head>
 
-  <body class="main-container">
-    <div class="header">
-      <img src="./assets/Recurso 1logo.svg" alt="icon" />
-      <h1>
-        Complete los datos a continuación para generar su firma digital,
-        presione “Generar Código” y luego copiar para usarlo en su correo. En el
-        botón Descargar Imagen podrá obtener la firma en formato .JPG
-      </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>Signature</title>
+</head>
+
+<body class="main-container">
+
+  <!-- Header, Logo e intrucciones-->
+  <div class="header">
+    <img src="./assets/Recurso 1logo.svg" alt="icon" />
+    <h1>
+      Complete los datos a continuación para generar su firma digital,
+      presione “Generar Código” y luego copiar para usarlo en su correo. En el
+      botón Descargar Imagen podrá obtener la firma en formato .JPG
+    </h1>
+  </div>
+
+  <!-- Contenedor de la seccion principal-->
+
+  <section class="contain">
+
+    <!-- Contenedor del formulario-->
+    <div class="form-contain">
+      <form action="">
+
+        <label for="GET-name">Nombre completo</label>
+
+        <input id="GET-name" type="text" name="name" placeholder="Carolina Cruz" />
+
+        <label for="GET-position">Cargo</label>
+
+        <input id="GET-position" type="text" name="position" placeholder="Gerente" />
+
+        <label for="GET-tel">Número de celular</label>
+
+        <input id="GET-tel" type="text" name="tel" placeholder="301021354" />
+
+        <button class="Primary-button">Generar Codigo</button>
+
+        <button class="Secondary-button">Descargar Imagen</button>
+
+      </form>
     </div>
-    <section class="contain">
-      <div class="form-contain">
-        <form action="">
-          <label for="GET-name">Nombre completo</label>
-          <input
-            id="GET-name"
-            type="text"
-            name="name"
-            placeholder="Carolina Cruz"
-          />
-          <label for="GET-position">Cargo</label>
-          <input
-            id="GET-position"
-            type="text"
-            name="position"
-            placeholder="Gerente"
-          />
-          <label for="GET-tel">Número de celular</label>
-          <input id="GET-tel" type="text" name="tel" placeholder="301021354" />
-          <button class="Primary-button">Generar Codigo</button>
-          <button class="Secondary-button">Descargar Imagen</button>
-        </form>
-      </div>
-      <div class="utilities">
-        <div class="preview">
-          <div class="container-deg">
-            <div class="paralelogramo"></div>
-            <img
-              class="logo-colvatel"
-              src="./assets/Recurso 3logo2023.svg"
-              alt="logo signature"
-            />
-          </div>
-          <div class="text-container">
-            <p>Miguel Angel Clavijo</p>
-            <p>Practicante Universitario</p>
-            <p>PBX:(601) 4387000</p>
-            <p>Celular: 305 815 5731</p>
-            <p>
-              <img
-                href="https://www.colvatel.com"
-                class="icon-tel"
-                src="./assets/Recurso 1web.svg"
-              />
 
-              <img
-                href="https://www.linkedin.com/company/colvatel/"
-                class="icon-linkedin"
-                src="./assets/Recurso 2linkedin.svg"
-              />
-            </p>
-          </div>
+    <!-- Contenedor del Preview & HTML-->
+    <div class="utilities">
+
+      <!-- Contenedor del Preview-->
+      <div class="preview">
+
+        <div class="container-deg">
+
+          <div class="paralelogramo"></div>
+          <img class="logo-colvatel" src="./assets/Recurso 3logo2023.svg" alt="logo signature" />
+
         </div>
-        <div class="code-contain"></div>
+
+        <div class="text-container">
+
+          <p>Miguel Angel Clavijo</p>
+          <p>Practicante Universitario</p>
+          <p>PBX:(601) 4387000</p>
+          <p>Celular: 305 815 5731</p>
+
+          <div id="icon-container">
+
+            <a href="https://www.colvatel.com">
+              <img class="icon-tel" src="./assets/Recurso 1web.svg" />
+            </a>
+            <a href="https://www.linkedin.com/company/colvatel/">
+              <img class="icon-linkedin" src="./assets/Recurso 2linkedin.svg" />
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
-    </section>
-    <footer>
-      <p>© 1992-2023 Colvatel S.A E.S.P Todos los derechos reservados.</p>
-    </footer>
-  </body>
+
+      <!-- Contenedor del HTML-->
+      <div class="code-contain"></div>
+    </div>
+  </section>
+  <!-- Contenedor del footer-->
+  <footer>
+    <p>© 1992-2023 Colvatel S.A E.S.P Todos los derechos reservados.</p>
+  </footer>
+</body>
+
 </html>
