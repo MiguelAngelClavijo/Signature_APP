@@ -51,7 +51,7 @@ body {
 
 .main-container {
   display: flex;
-  width: 600px;
+  width: 700px;
 }
 
 .container-deg {
