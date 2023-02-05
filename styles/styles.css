@@ -275,7 +275,16 @@ button {
 }
 
 .code::-webkit-scrollbar {
-  display: none;
+  position: absolute;
+  width: 8px;
+  background-color: var(--white);
+  border-radius: 10px;
+  right: 10px;
+}
+
+.code::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: 10px;
 }
 
 /*Estilos del Footer*/
