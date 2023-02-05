@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Signature</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/styles.css" />
-  <title>Signature</title>
-</head>
-
-<body class="main-container">
-
-  <!-- Header, Logo e intrucciones-->
-  <div class="header">
-    <img src="./assets/Recurso 1logo.svg" alt="icon" />
-    <h1>
-      Complete los datos a continuación para generar su firma digital,
-      presione “Generar Código” y luego copiar para usarlo en su correo. En el
-      botón Descargar Imagen podrá obtener la firma en formato .JPG
-    </h1>
-  </div>
-
-  <!-- Contenedor de la seccion principal-->
-
-  <section class="contain">
-
-    <!-- Contenedor del formulario-->
-    <div class="form-contain">
-      <form action="">
-
-        <label for="GET-name">Nombre completo</label>
-
-        <input id="GET-name" type="text" name="name" placeholder="Carolina Cruz" />
-
-        <label for="GET-position">Cargo</label>
-
-        <input id="GET-position" type="text" name="position" placeholder="Gerente" />
-
-        <label for="GET-tel">Número de celular</label>
-
-        <input id="GET-tel" type="text" name="tel" placeholder="301021354" />
-
-        <button class="Primary-button">Generar Codigo</button>
-
-        <button class="Secondary-button">Descargar Imagen</button>
-
-      </form>
+  <body class="main-container">
+    <!-- Header, Logo e intrucciones-->
+    <div class="header">
+      <img src="./assets/Recurso 1logo.svg" alt="icon" />
+      <h1>
+        Complete los datos a continuación para generar su firma digital,
+        presione “Generar Código” y luego copiar para usarlo en su correo. En el
+        botón Descargar Imagen podrá obtener la firma en formato . JPG
+      </h1>
     </div>
 
-    <!-- Contenedor del Preview & HTML-->
-    <div class="utilities">
+    <!-- Contenedor de la seccion principal-->
 
-      <!-- Contenedor del Preview-->
-      <div class="preview">
+    <section class="contain">
+      <!-- Contenedor del formulario-->
+      <div class="form-contain">
+        <form action="">
+          <label for="GET-name">Nombre completo</label>
+          <input
+            type="text"
+            id="GET-name"
+            name="name"
+            placeholder="Miguel Angel Clavijo"
+          />
 
-        <div class="container-deg">
+          <label for="GET-position">Cargo</label>
 
-          <div class="paralelogramo"></div>
-          <img class="logo-colvatel" src="./assets/Recurso 3logo2023.svg" alt="logo signature" />
+          <input
+            type="text"
+            id="GET-position"
+            name="position"
+            placeholder="Practicante Universitario"
+          />
 
-        </div>
+          <label for="GET-tel">Número de celular</label>
 
-        <div class="text-container">
+          <input id="GET-tel" type="text" name="tel" placeholder="3052670670" />
 
-          <p>Miguel Angel Clavijo</p>
-          <p>Practicante Universitario</p>
-          <p>PBX:(601) 4387000</p>
-          <p>Celular: 305 815 5731</p>
+          <button class="Primary-button">Generar Codigo</button>
 
-          <div id="icon-container">
-
-            <a href="https://www.colvatel.com">
-              <img class="icon-tel" src="./assets/Recurso 1web.svg" />
-            </a>
-            <a href="https://www.linkedin.com/company/colvatel/">
-              <img class="icon-linkedin" src="./assets/Recurso 2linkedin.svg" />
-            </a>
-
-          </div>
-
-        </div>
-
+          <button class="Secondary-button">Descargar Imagen</button>
+        </form>
       </div>
 
-      <!-- Contenedor del HTML-->
-      <div class="code-contain"></div>
-    </div>
-  </section>
-  <!-- Contenedor del footer-->
-  <footer>
-    <p>© 1992-2023 Colvatel S.A E.S.P Todos los derechos reservados.</p>
-  </footer>
-</body>
+      <!-- Contenedor del Preview & HTML-->
+      <div class="utilities">
+        <!-- Contenedor del Preview-->
+        <h2 class="preview-title">Previsualización</h2>
+        <div class="preview">
+          <div class="container-deg">
+            <div class="paralelogramo"></div>
+            <img
+              class="logo-colvatel"
+              src="./assets/Recurso 3logo2023.svg"
+              alt="logo signature"
+            />
+          </div>
 
+          <div class="text-container">
+            <p><span id="previewName"></span></p>
+            <p><span id="previewPosition"></span></p>
+            <p>PBX:(601) 4387000</p>
+            <p>Celular: <span id="previewTel"></span></p>
+
+            <div id="icon-container">
+              <a href="https://www.colvatel.com">
+                <img class="icon-tel" src="./assets/Recurso 1web.svg" />
+              </a>
+              <a href="https://www.linkedin.com/company/colvatel/">
+                <img
+                  class="icon-linkedin"
+                  src="./assets/Recurso 2linkedin.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenedor del HTML-->
+        <div class="code-contain"></div>
+      </div>
+    </section>
+    <!-- Contenedor del footer-->
+    <footer>
+      <p>© 1992-2023 Colvatel S.A E.S.P Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./src/main.js"></script>
+  </body>
 </html>

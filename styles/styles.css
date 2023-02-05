@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-
 /*Configuración global*/
 :root {
   --primary-color: #1a3e72;
@@ -22,10 +21,7 @@ body {
   margin: 0;
 }
 
-
 /*Estilos del Header*/
-
-
 .header {
   display: flex;
   width: 100vw;
@@ -116,7 +112,6 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
-
 /*Estilos del Contenedor del preview & HTML*/
 .contain .utilities {
   display: flex;
@@ -124,17 +119,23 @@ button {
 }
 
 /*Estilos del Contenedor preview*/
-
 .preview {
   display: flex;
-  width: 600px;
+  width: 700px;
   margin-left: 90px;
+  margin-top: 10px;
   border: 1px solid var(--colvatel-primary);
 }
 
+.preview-title {
+  display: flex;
+  font-size: var(--md);
+  font-weight: 700;
+  margin: 0 90px;
+  color: var(--colvatel-primary);
+}
 
 /*Estilos del preview*/
-
 .container-deg {
   position: relative;
   height: 200px;
@@ -144,17 +145,19 @@ button {
 
 .paralelogramo {
   position: absolute;
-  background: linear-gradient(29.1deg,
-      #1b396a 10.72%,
-      #1a3a6b 32.05%,
-      #183f72 39.62%,
-      #15487e 45.13%,
-      #11548f 49.26%,
-      #0b64a5 53.39%,
-      #086fb3 54.76%,
-      #0d5f9d 60.27%,
-      #174378 70.59%,
-      #1b396a 76.1%);
+  background: linear-gradient(
+    29.1deg,
+    #1b396a 10.72%,
+    #1a3a6b 32.05%,
+    #183f72 39.62%,
+    #15487e 45.13%,
+    #11548f 49.26%,
+    #0b64a5 53.39%,
+    #086fb3 54.76%,
+    #0d5f9d 60.27%,
+    #174378 70.59%,
+    #1b396a 76.1%
+  );
   height: 200px;
   width: 350px;
   position: relative;
@@ -217,11 +220,7 @@ button {
 
 /*Estilos del HTML*/
 
-
-
-
 /*Estilos del Footer*/
-
 footer p {
   margin: 0;
   text-align: center;
