@@ -33,7 +33,7 @@ body {
 }
 
 .header img {
-  margin: 0 0 45px 0;
+  margin: 0 0 35px 0;
   width: 400px;
   height: 60px;
 }
@@ -46,6 +46,11 @@ body {
   width: 550px;
   text-align: center;
   font-weight: 400;
+}
+
+.header span {
+  font-size: var(--sm);
+  font-weight: 700;
 }
 
 /*Estilos del Contenedor principal*/
@@ -267,6 +272,10 @@ button {
   overflow: scroll;
   overflow-x: hidden;
   color: var(--white);
+}
+
+.code::-webkit-scrollbar {
+  display: none;
 }
 
 /*Estilos del Footer*/
