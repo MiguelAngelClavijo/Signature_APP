@@ -19,6 +19,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /*Estilos del Header*/
@@ -160,6 +161,9 @@ button {
   font-size: var(--sm);
   font-weight: 500;
   border-radius: 8px;
+  padding: 5px;
+  width: 90px;
+
 }
 
 /*Estilos del preview*/
@@ -311,6 +315,7 @@ button {
 /*Estilos del Footer*/
 footer p {
   margin: 0;
+  margin-bottom:20px ;
   text-align: center;
   width: 100vw;
   color: var(--secondary-text);
