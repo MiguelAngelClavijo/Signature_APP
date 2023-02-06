@@ -139,8 +139,27 @@ button {
   display: flex;
   font-size: var(--md);
   font-weight: 700;
-  margin: 0 90px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 90px;
   color: var(--colvatel-primary);
+  text-align: left;
+}
+
+.buttons-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-signature1,
+.btn-signature2 {
+  color: var(--white);
+  background-color: var(--colvatel-primary);
+  border: none;
+  font-size: var(--sm);
+  font-weight: 500;
+  border-radius: 8px;
 }
 
 /*Estilos del preview*/
@@ -329,6 +348,24 @@ footer p {
     margin: 0 0 60px 0;
   }
 
+  .buttons-title {
+    margin-bottom: 10px;
+  }
+
+  .buttons-title h2 {
+    margin: 0;
+    font-size: var(--sm);
+  }
+
+  .btn-signature1,
+  .btn-signature2 {
+    font-size: 12px;
+  }
+
+  .preview-title {
+    justify-content: space-between;
+  }
+
   ::placeholder {
     font-size: 12px;
   }
@@ -373,12 +410,6 @@ footer p {
   form label {
     margin: 0 0 10px 0;
     font-size: var(--sm);
-  }
-
-  .preview-title {
-    margin: 0 0 10px 0;
-    font-size: var(--sm);
-    justify-content: center;
   }
 
   .container-deg {
