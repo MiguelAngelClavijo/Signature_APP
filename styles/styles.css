@@ -163,7 +163,6 @@ button {
   border-radius: 8px;
   padding: 5px;
   width: 90px;
-
 }
 
 /*Estilos del preview*/
@@ -315,7 +314,7 @@ button {
 /*Estilos del Footer*/
 footer p {
   margin: 0;
-  margin-bottom:20px ;
+  margin-bottom: 20px;
   text-align: center;
   width: 100vw;
   color: var(--secondary-text);
