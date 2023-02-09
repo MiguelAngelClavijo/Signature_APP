@@ -1,3 +1,5 @@
+// Declaracion de variables de elementos del DOM
+
 const name = document.getElementById("GET-name");
 const position = document.getElementById("GET-position");
 const tel = document.getElementById("GET-tel");
@@ -11,37 +13,53 @@ const sig1 = document.querySelector(".btn-signature1");
 const sig2 = document.querySelector(".btn-signature2");
 const previewsvg = document.querySelector(".container-deg");
 const copymsg = document.querySelector(".copy-msg");
-var popo;
+
+// Variable global de para crear objeto ClipBoard
+var data;
 
 
+// Establecer la función `preview` para ejecutarse cuando se cargue la página
 window.onload = function () {
   preview();
 };
 
+// La función `preview` actualiza la sección de vista previa de la página
+// con los valores ingresados en los campos del formulario
 function preview() {
+  // Actualiza el texto del elemento `pname` con el valor del campo `name`,
+  // o con su valor placeholder si el campo está vacío
+
   pname.innerText = name.value || name.placeholder;
+
+  // Actualiza el texto del elemento `pposition` con el valor del campo `position`,
+  // o con su valor placeholder si el campo está vacío
   pposition.innerText = position.value || position.placeholder;
+
+  // Actualiza el texto del elemento `ptel` con el valor del campo `tel`,
+  // o con su valor placeholder si el campo está vacío
   ptel.innerText = tel.value || tel.placeholder;
 }
 
-name.addEventListener("input", preview);
-position.addEventListener("input", preview);
-tel.addEventListener("input", preview);
-generate.addEventListener("click", generatecode);
-copy.addEventListener('click', norefresh);
+// Función para prevenir el refresco de la página
 
 function norefresh(event) {
+
+  // Prevenir el comportamiento por defecto del evento
   event.preventDefault();
 }
 
 function generatecode(event) {
+  // Prevenir el comportamiento por defecto del evento
   event.preventDefault();
+
+  // Obtener los valores de los elementos de entrada de nombre, posición y teléfono
   let inputname = name.value;
   let inputposition = position.value;
   let inputtel = tel.value;
 
+  // Verificar si la clase "firma2" se encuentra en la lista de clases de previewsvg
   if (previewsvg.classList.contains('firma2')) {
-
+    // Si la clase se encuentra, generar código HTML 
     let code = [`<table style="max-height: 200px">
     <tbody>
       <tr>
@@ -121,9 +139,11 @@ function generatecode(event) {
     </tbody>
   </table>
   `]
-    popo = code;
 
+    // Guarda el HTML generado en la variable global data
+    data = code;
   } else {
+    // Si la clase "firma2" no se encuentra en la lista de clases de previewsvg genera código HTML
     let code = [`<table style="max-height: 200px">
     <tbody>
       <tr>
@@ -203,50 +223,104 @@ function generatecode(event) {
     </tbody>
   </table>
 `]
-    popo = code
+    // Guarda el HTML generado en la variable global data
+    data = code
   }
-
+  // Verifica si la clase "disabled" se encuentra en la lista de clases del elemento copy
   if (copy.classList.contains('disabled')) {
+
+    //Si se encuentra, remueve la clase "disabled" de la lista de clases de copy
     copy.classList.remove('disabled')
   }
 }
 
-copy.onclick = async function () {
+// Declaramos una función asíncrona para copiar el contenido al portapapeles
+copy.onclick = async () => {
   try {
-    var blobli = new Blob(popo, { type: 'text/html' });
+
+    // Intentamos realizar la acción de copiar al portapapeles
+    // Creamos un nuevo objeto Blob con los datos y el tipo de texto/html
+    var blobli = new Blob(data, { type: 'text/html' });
+
+    // Creamos un nuevo objeto ClipboardItem con los datos del Blob
     var obj = [new ClipboardItem({ ["text/html"]: blobli, })]
+
+    // Escribimos el objeto ClipboardItem en el portapapeles
     await navigator.clipboard.write(obj);
+
+    // Mostramos un mensaje de éxito al copiar
     copymsg.style.display = 'flex';
-    setTimeout(function () {
+
+    // Ocultamos el mensaje de éxito después de 1.5 segundos
+    setTimeout(() => {
       copymsg.style.display = 'none';
     }, 1500)
-  }
-  catch (err) {
+
+
+  } catch (err) {
+
+    // Si ocurre un error, lo mostramos en la consola
     console.log(err);
   }
 };
 
+// Funcion que se ejecuta al darle clic al boton "firma 2"
 sig2.onclick = function () {
+
+  // Limpiar el contenido del elemento con id "previewsvg"
   previewsvg.innerHTML = '';
+
+  // Agregar una imagen con la clase "img-change" y la ruta de la imagen
   previewsvg.innerHTML = '<img class="img-change" src="../assets/Recurso 5logoblanco.png"></img>';
+
+  // Verificar si el elemento con id "previewsvg" tiene la clase "firma1"
   if (previewsvg.classList.contains('firma1')) {
+
+    // Si tiene la clase "firma1", removerla
     previewsvg.classList.remove('firma1')
+
+    // Agregar la clase "firma2"
     previewsvg.classList.add('firma2')
   }
 }
 
+// Funcion que se ejecuta al darle clic al boton "firma 1"
 sig1.onclick = function () {
+
+  // Limpiar el contenido del elemento con id "previewsvg"
   previewsvg.innerHTML = '';
+
+  //Crea el paralelogramo y agrega una imagen con la clase "logo-colvatel" y la ruta de la imagen
   previewsvg.innerHTML = `<div class="paralelogramo"></div>
   <img
     class="logo-colvatel"
     src="./assets/Recurso 3logo2023.svg"
     alt="logo signature"
   />`;
+
+  // Verificar si el elemento con id "previewsvg" tiene la clase "firma2"
   if (previewsvg.classList.contains('firma2')) {
+
+    // Si tiene la clase "firma2", removerla
     previewsvg.classList.remove('firma2')
+
+    // Agregar la clase "firma1"
     previewsvg.classList.add('firma1')
   }
 
 }
 
+// Escuchar el evento de entrada para el elemento con el id "name" y ejecutar la función "preview"
+name.addEventListener("input", preview);
+
+// Escuchar el evento de entrada para el elemento con el id "position" y ejecutar la función "preview"
+position.addEventListener("input", preview);
+
+// Escuchar el evento de entrada para el elemento con el id "tel" y ejecutar la función "preview"
+tel.addEventListener("input", preview);
+
+// Escuchar el evento de clic para el elemento con el id "generate" y ejecutar la función "generatecode"
+generate.addEventListener("click", generatecode);
+
+// Escuchar el evento de clic para el elemento con el id "copy" y ejecutar la función "norefresh"
+copy.addEventListener('click', norefresh);
