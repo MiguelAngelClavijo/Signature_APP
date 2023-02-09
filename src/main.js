@@ -16,7 +16,6 @@ const copymsg = document.querySelector(".copy-msg");
 // Variable global de para crear objeto ClipBoard
 var data;
 
-
 // Establecer la función `preview` para ejecutarse cuando se cargue la página
 window.onload = function () {
   preview();
@@ -116,7 +115,8 @@ function generatecode(event) {
           <a
             href="https://www.colvatel.com/"
             target="_blank"
-            style="margin-right: 30px"
+            style="margin-right: 0px"
+            border: 1pt;
           >
             <img
               src="https://i.postimg.cc/9MFMm8pL/logo-web.png"
@@ -124,7 +124,25 @@ function generatecode(event) {
               width="30"
               height="31"
               style="max-width: initial; width: 30px; height: 31px" /></a
-          ><a href="https://www.linkedin.com/company/colvatel/" target="_blank"
+          >
+          <a
+            href="https://www.colvatel.com/"
+            target="_blank"
+            style="margin-right: 0px"
+            border: 1pt;
+          >
+            <img
+              src="https://i.postimg.cc/y8vC286p/Recurso-7loggoblancoconderechos.png"
+              alt="icon-web"
+              width="30"
+              height="31"
+              style="max-width: initial; width: 30px; height: 31px" /></a
+          >
+          <a 
+            href="https://www.linkedin.com/company/colvatel/"
+            target="_blank"
+            style="margin-right: 0px"
+            border: 1pt;
             ><img
               src="https://i.postimg.cc/0NZkBGsD/logo-linkedin.png"
               alt="icon-linkedin"
@@ -200,7 +218,8 @@ function generatecode(event) {
           <a
             href="https://www.colvatel.com/"
             target="_blank"
-            style="margin-right: 30px"
+            style="margin-right: 0px"
+            border: 1pt;
           >
             <img
               src="https://i.postimg.cc/9MFMm8pL/logo-web.png"
@@ -208,7 +227,25 @@ function generatecode(event) {
               width="30"
               height="31"
               style="max-width: initial; width: 30px; height: 31px" /></a
-          ><a href="https://www.linkedin.com/company/colvatel/" target="_blank"
+          >
+          <a
+            href="https://www.colvatel.com/"
+            target="_blank"
+            style="margin-right: 0px"
+            border: 1pt;
+          >
+            <img
+              src="https://i.postimg.cc/y8vC286p/Recurso-7loggoblancoconderechos.png"
+              alt="icon-web"
+              width="30"
+              height="31"
+              style="max-width: initial; width: 30px; height: 31px" /></a
+          >
+          <a 
+            href="https://www.linkedin.com/company/colvatel/"
+            target="_blank"
+            style="margin-right: 0px"
+            border: 1pt;
             ><img
               src="https://i.postimg.cc/0NZkBGsD/logo-linkedin.png"
               alt="icon-linkedin"
