@@ -1,5 +1,4 @@
 // Declaracion de variables de elementos del DOM
-
 const name = document.getElementById("GET-name");
 const position = document.getElementById("GET-position");
 const tel = document.getElementById("GET-tel");
@@ -239,7 +238,7 @@ copy.onclick = async () => {
   try {
 
     // Intentamos realizar la acción de copiar al portapapeles
-    // Creamos un nuevo objeto Blob con los datos y el tipo de texto/html
+    // Creamos un nuevo objeto Blob con los datos y el tipo de MIME texto/html
     var blobli = new Blob(data, { type: 'text/html' });
 
     // Creamos un nuevo objeto ClipboardItem con los datos del Blob
@@ -251,7 +250,7 @@ copy.onclick = async () => {
     // Mostramos un mensaje de éxito al copiar
     copymsg.style.display = 'flex';
 
-    // Ocultamos el mensaje de éxito después de 1.5 segundos
+    // Ocultamos el mensaje de éxito después de 1.5 segundos (Callback)
     setTimeout(() => {
       copymsg.style.display = 'none';
     }, 1500)

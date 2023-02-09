@@ -102,6 +102,7 @@ form input {
   color: white;
   margin: 0 0 37px 0;
   cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .Secondary-button {
@@ -112,6 +113,7 @@ form input {
   color: var(--primary-color);
   background-color: white;
   cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 button {
@@ -181,6 +183,7 @@ button {
   cursor: pointer;
   border: 2px solid transparent;
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 
 /*--------------------------------------------------------------------------------------------*/
@@ -269,6 +272,15 @@ button {
 }
 
 /*--------------------------------------------------------------------------------------------*/
+/*Animacion container preview*/
+.firma1 {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+/*--------------------------------------------------------------------------------------------*/
 /*Estilos del Code container*/
 .code-contain {
   display: flex;
@@ -343,7 +355,6 @@ footer p {
   font-size: var(--sm);
 }
 
-
 /*--------------------------------------------------------------------------------------------*/
 /*Estilos botones abajo*/
 .buttons-end {
@@ -400,11 +411,13 @@ footer p {
   color: var(--primary-color);
   background-color: transparent;
   border: 3px solid var(--primary-color);
+  transform: translateY(-5px);
 }
 
 .Secondary-button:hover {
   color: var(--white);
   background-color: var(--colvatel-primary);
+  transform: translateY(-5px);
 }
 
 .btn-signature1:hover,
@@ -412,6 +425,7 @@ footer p {
   color: var(--primary-color);
   background-color: transparent;
   border: 2px solid var(--primary-color);
+  transform: translateY(5px);
 }
 
 @media (max-width: 600px) {
