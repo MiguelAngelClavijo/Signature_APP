@@ -9,7 +9,7 @@
   --secondary-text: #626266;
   --colvatel-primary: #1c396b;
   --colvatel-secondary: #365a8e;
-  --colvatel-tertiary: #2e74b5;
+  --colvatel-tertiary: #c1d8fe;
   --white: #ffffff;
   --sm: 14px;
   --md: 18px;
@@ -98,6 +98,7 @@ form input {
   border: none;
   color: white;
   margin: 0 0 37px 0;
+  cursor: pointer;
 }
 
 .Secondary-button {
@@ -107,6 +108,7 @@ form input {
   height: 52px;
   color: var(--primary-color);
   background-color: white;
+  cursor: pointer;
 }
 
 button {
@@ -123,7 +125,8 @@ button {
 .contain .utilities {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  height: 400px;
 }
 
 /*Estilos del Contenedor preview*/
@@ -150,7 +153,13 @@ button {
 .buttons-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.buttons-signature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .btn-signature1,
@@ -159,10 +168,14 @@ button {
   background-color: var(--colvatel-primary);
   border: none;
   font-size: var(--sm);
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 8px;
-  padding: 5px;
-  width: 90px;
+  padding: 15px;
+  width: 150px;
+  margin: 20px 0 20px 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 /*Estilos del preview*/
@@ -224,14 +237,14 @@ button {
   margin: 10px 0 0 0;
   font-size: var(--sm);
   font-weight: 500;
-  color: var(--colvatel-tertiary);
+  color: var(--colvatel-secondary);
 }
 
 .text-container p:nth-child(4) {
   margin: 2px 0 0 0;
   font-size: var(--sm);
   font-weight: 500;
-  color: var(--colvatel-tertiary);
+  color: var(--colvatel-secondary);
 }
 
 .text-container a {
@@ -319,6 +332,70 @@ footer p {
   width: 100vw;
   color: var(--secondary-text);
   font-size: var(--sm);
+}
+
+/*Estilos botones abajo*/
+.buttons-end {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 400px;
+}
+
+.disabled {
+  color: var(--secondary-text);
+  border-color: var(--secondary-text);
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/*Estilos main.js*/
+.img-change {
+  height: 202px;
+}
+
+/*Estilos pop-ups*/
+.copy-msg {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  border: 1px solid var(--secondary-text);
+  box-shadow: 0px 4px 4px rgba(26, 62, 114, 0.38);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.copy-msg h1 {
+  color: var(--black);
+  font-size: var(--sm);
+  text-align: center;
+  font-weight: 500;
+}
+
+/*hovers*/
+
+.Primary-button:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 3px solid var(--primary-color);
+}
+
+.Secondary-button:hover {
+  color: var(--white);
+  background-color: var(--colvatel-primary);
+}
+
+.btn-signature1:hover,
+.btn-signature2:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
 }
 
 @media (max-width: 600px) {
