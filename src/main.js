@@ -304,7 +304,7 @@ copy.onclick = async () => {
 sig2.onclick = function () {
 
   // Limpiar el contenido del elemento con id "previewsvg"
-  previewsvg.innerHTML = '';
+  //previewsvg.innerHTML = '';
 
   // Agregar una imagen con la clase "img-change" y la ruta de la imagen
   previewsvg.innerHTML = '<img class="img-change" src="https://i.postimg.cc/2yVQcQV5/Recurso-5logoblanco.png"></img>';
@@ -324,7 +324,7 @@ sig2.onclick = function () {
 sig1.onclick = function () {
 
   // Limpiar el contenido del elemento con id "previewsvg"
-  previewsvg.innerHTML = '';
+  //previewsvg.innerHTML = '';
 
   //Crea el paralelogramo y agrega una imagen con la clase "logo-colvatel" y la ruta de la imagen
   previewsvg.innerHTML = `<div class="paralelogramo"></div>
