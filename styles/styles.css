@@ -590,4 +590,13 @@ footer p {
   footer {
     margin-bottom: 20px;
   }
+
+  footer p {
+    font-size: var(--sm);
+    font-weight: 200;
+  }
+
+  .buttons-end {
+    flex-direction: column;
+  }
 }

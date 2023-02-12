@@ -343,7 +343,6 @@ sig1.onclick = function () {
     // Agregar la clase "firma1"
     previewsvg.classList.add('firma1')
   }
-
 }
 
 // Escuchar el evento de entrada para el elemento con el id "name" y ejecutar la función "preview"
@@ -360,3 +359,15 @@ generate.addEventListener("click", generatecode);
 
 // Escuchar el evento de clic para el elemento con el id "copy" y ejecutar la función "norefresh"
 copy.addEventListener('click', norefresh);
+
+// Bloquear tipo de texto que se escribe en el input
+name.addEventListener("input", function () {
+  const value = input.value;
+  const onlyLetters = /^[a-zA-Z]+$/;
+
+  if (!onlyLetters.test(value)) {
+    warning.style.display = "block";
+  } else {
+    warning.style.display = "none";
+  }
+});
