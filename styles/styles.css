@@ -375,6 +375,7 @@ footer p {
 /*--------------------------------------------------------------------------------------------*/
 /*Estilos main.js*/
 .img-change {
+  width: 270px;
   height: 202px;
 }
 
@@ -437,13 +438,26 @@ footer p {
     width: 270px;
     height: 40px;
   }
+
+  #GET-tel {
+    margin-bottom: 0;
+  }
+
   .contain {
+    display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: center;
     margin: 0px;
-    justify-items: center;
+    height: 590px;
   }
+
+  .img-change {
+    width: 160px;
+    height: 95px;
+  }
+
   .header h1 {
     width: 270px;
     margin: 0 0 45px 0;
@@ -468,8 +482,15 @@ footer p {
     font-size: var(--sm);
   }
 
+  .buttons-signature {
+    gap: 10px;
+  }
+
   .btn-signature1,
   .btn-signature2 {
+    height: 50px;
+    width: 120px;
+    margin: 20px 0 0 0;
     font-size: 12px;
   }
 
@@ -511,9 +532,14 @@ footer p {
     width: 12px;
   }
 
+  .contain .utilities {
+    justify-content: flex-start;
+  }
+
   .utilities {
-    margin: auto;
+    margin: 0;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     margin: 0px;
   }
@@ -585,6 +611,7 @@ footer p {
     width: 270px;
     height: 50px;
     font-size: var(--sm);
+    margin: 0;
   }
 
   footer {
@@ -598,5 +625,7 @@ footer p {
 
   .buttons-end {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }

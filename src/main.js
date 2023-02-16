@@ -63,7 +63,7 @@ function generatecode(event) {
       <tr>
         <td style="padding: 20px">
           <img
-            src="https://i.postimg.cc/2yVQcQV5/Recurso-5logoblanco.png"
+            src="https://i.postimg.cc/T3PbKJ0g/Logo-blanco-1-232-x-195.png"
             alt="img"
             id="imageSelected0"
             width="222"
@@ -307,7 +307,7 @@ sig2.onclick = function () {
   previewsvg.innerHTML = '';
 
   // Agregar una imagen con la clase "img-change" y la ruta de la imagen
-  previewsvg.innerHTML = '<img class="img-change" src="https://i.postimg.cc/2yVQcQV5/Recurso-5logoblanco.png"></img>';
+  previewsvg.innerHTML = '<img class="img-change" id="logo-colvatel-blanco2" src="../assets/Logo blanco_1232 x 195.svg"></img>';
 
   // Verificar si el elemento con id "previewsvg" tiene la clase "firma1"
   if (previewsvg.classList.contains('firma1')) {
@@ -330,6 +330,7 @@ sig1.onclick = function () {
   previewsvg.innerHTML = `<div class="paralelogramo"></div>
   <img
     class="logo-colvatel"
+    
     src="./assets/Recurso 3logo2023.svg"
     alt="logo signature"
   />`;
