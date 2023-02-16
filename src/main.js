@@ -307,7 +307,7 @@ sig2.onclick = function () {
   //previewsvg.innerHTML = '';
 
   // Agregar una imagen con la clase "img-change" y la ruta de la imagen
-  previewsvg.innerHTML = '<img class="img-change" id="logo-colvatel-blanco2" src="../assets/Logo blanco_1232 x 195.svg"></img>';
+  previewsvg.innerHTML = '<img class="img-change" id="logo-colvatel-blanco2" src="../assets/Logo blanco.svg"></img>';
 
   // Verificar si el elemento con id "previewsvg" tiene la clase "firma1"
   if (previewsvg.classList.contains('firma1')) {
