@@ -143,7 +143,8 @@ button {
   margin-left: 90px;
   margin-top: 10px;
   border: 1px solid var(--colvatel-primary);
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
+  height: 200px;
 }
 
 .preview-title {
@@ -190,10 +191,14 @@ button {
 /*Estilos del preview*/
 .container-deg {
   position: relative;
-  height: 200px;
+  height: 208px;
   width: 270px;
   overflow: hidden;
-  border-radius: 17px;
+  border-radius: 0;
+}
+
+.frase {
+  margin: 0;
 }
 
 .paralelogramo {
@@ -216,7 +221,8 @@ button {
   right: 150px;
   transform: skew(-20deg);
   justify-content: center;
-  z-index: 1;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .logo-colvatel {
@@ -235,6 +241,10 @@ button {
   color: var(--colvatel-primary);
 }
 
+.text-container {
+  height: 200px;
+}
+
 .text-container p:nth-child(2) {
   margin: 10px 0 0 0;
   font-size: var(--md);
@@ -243,13 +253,20 @@ button {
 }
 
 .text-container p:nth-child(3) {
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
   font-size: var(--sm);
   font-weight: 500;
   color: var(--colvatel-secondary);
 }
 
 .text-container p:nth-child(4) {
+  margin: 2px 0 0 0;
+  font-size: var(--sm);
+  font-weight: 500;
+  color: var(--colvatel-secondary);
+}
+
+.text-container p:nth-child(5) {
   margin: 2px 0 0 0;
   font-size: var(--sm);
   font-weight: 500;
@@ -294,10 +311,12 @@ button {
 
 .firma1 {
   transition: all 0.5s ease-in-out;
+  display: fle;
 }
 
 .firma2 {
   transition: all 0.5s ease-in-out;
+  display: none;
 }
 
 /*--------------------------------------------------------------------------------------------*/
