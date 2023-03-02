@@ -23,19 +23,28 @@ window.onload = function () {
 
 // La función `preview` actualiza la sección de vista previa de la página
 // con los valores ingresados en los campos del formulario
+let telglobal;
+
 function preview() {
+  var firsttel = tel.value.charAt(0) + tel.value.charAt(1) + tel.value.charAt(2);
+  var secondtel = tel.value.charAt(3) + tel.value.charAt(4) + tel.value.charAt(5);
+  var thirdtel = tel.value.charAt(6) + tel.value.charAt(7) + tel.value.charAt(8) + tel.value.charAt(9);
+  telglobal = firsttel + ' ' + secondtel + ' ' + thirdtel;
+
+  if (tel.value == "") {
+    ptel.innerText = tel.placeholder;
+  } else {
+    ptel.innerText = telglobal;
+  }
+
+
   // Actualiza el texto del elemento `pname` con el valor del campo `name`,
   // o con su valor placeholder si el campo está vacío
-
   pname.innerText = name.value || name.placeholder;
 
   // Actualiza el texto del elemento `pposition` con el valor del campo `position`,
   // o con su valor placeholder si el campo está vacío
   pposition.innerText = position.value || position.placeholder;
-
-  // Actualiza el texto del elemento `ptel` con el valor del campo `tel`,
-  // o con su valor placeholder si el campo está vacío
-  ptel.innerText = tel.value || tel.placeholder;
 }
 
 // Función para prevenir el refresco de la página
@@ -53,7 +62,7 @@ function generatecode(event) {
   // Obtener los valores de los elementos de entrada de nombre, posición y teléfono
   let inputname = name.value;
   let inputposition = position.value;
-  let inputtel = tel.value;
+  let inputtel = telglobal;
 
   // Verificar si la clase "firma2" se encuentra en la lista de clases de previewsvg
   if (previewsvg.classList.contains('firma2')) {
@@ -177,7 +186,7 @@ function generatecode(event) {
         <td style="padding: 20px">
           <p
             style="
-            font-family: Tahoma;
+              font-family: Tahoma;
               font-size: 28px;
               font-weight: 500;
               color: #1c396b;
@@ -367,15 +376,3 @@ generate.addEventListener("click", generatecode);
 
 // Escuchar el evento de clic para el elemento con el id "copy" y ejecutar la función "norefresh"
 copy.addEventListener('click', norefresh);
-
-// Bloquear tipo de texto que se escribe en el input
-name.addEventListener("input", function () {
-  const value = input.value;
-  const onlyLetters = /^[a-zA-Z]+$/;
-
-  if (!onlyLetters.test(value)) {
-    warning.style.display = "block";
-  } else {
-    warning.style.display = "none";
-  }
-});
