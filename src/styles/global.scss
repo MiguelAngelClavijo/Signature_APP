@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@font-face {
+  font-family: Tahoma;
+  src: url(../assets/Tahoma\ Regular\ font.ttf);
+}
+
+/*Configuración global*/
+:root {
+  --primary-color: #1a3e72;
+  --primary-hover: #7a9ac8;
+  --background-field: #f7f7f7;
+  --black: #000000;
+  --secondary-text: #626266;
+  --colvatel-primary: #1c396b;
+  --colvatel-secondary: #365a8e;
+  --colvatel-tertiary: #c1d8fe;
+  --white: #ffffff;
+  --sm: 14px;
+  --md: 18px;
+  --lg: 28px;
+}
+
+body {
+  font-family: Tahoma;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.contain {
+    margin: 0 0 56px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
