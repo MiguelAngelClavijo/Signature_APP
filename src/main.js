@@ -67,27 +67,26 @@ function generatecode(event) {
   // Verificar si la clase "firma2" se encuentra en la lista de clases de previewsvg
   if (previewsvg.classList.contains('firma2')) {
     // Si la clase se encuentra, generar código HTML 
-    let code = [`<table style="max-height: 200px">
+    let code = [`<table style="max-height: 180px">
     <tbody>
       <tr>
         <td style="padding: 20px">
           <img
-          src="https://i.postimg.cc/wBqJNvvT/Recurso-1imgcolvatel.png"
+          src="https://i.postimg.cc/nVXqjmjR/logo-blanco-small.png"
             alt="img"
             id="imageSelected0"
-            width="222"
-            height="200"
-            style="max-width: initial; width: 222px; height: 200px"
+            width="250"
+            style="max-width: initial; width: 250px"
           />
         </td>
         <td style="padding: 20px">
           <p
             style="
             font-family: Tahoma;
-              font-size: 28px;
+              font-size: 24px;
               font-weight: 500;
               color: #1c396b;
-              margin: 10px 0;
+              margin: 4px 0;
             "
           >
           ${inputname}
@@ -95,10 +94,10 @@ function generatecode(event) {
           <p
             style="
             font-family: Tahoma;
-              font-size: 18px;
+              font-size: 14px;
               font-weight: 500;
               color: #365a8e;
-              margin: 10px 0;
+              margin: 3px 0;
             "
           >
           ${inputposition}
@@ -106,10 +105,10 @@ function generatecode(event) {
           <p
             style="
             font-family: Tahoma;
-              font-size: 14px;
+              font-size: 12px;
               font-weight: 500;
               color: #2e74b5;
-              margin: 10px 0;
+              margin: 3px 0;
             "
           >
             PBX: (601) 4387000
@@ -123,9 +122,9 @@ function generatecode(event) {
             <img
               src="https://i.postimg.cc/9MFMm8pL/logo-web.png"
               alt="icon-web"
-              width="30"
-              height="31"
-              style="max-width: initial; width: 30px; height: 31px" /></a
+              width="20"
+              height="20"
+              style="max-width: initial; width: 20px; height: 20px" /></a
           >
           <a
             href="https://www.colvatel.com/"
@@ -136,9 +135,9 @@ function generatecode(event) {
             <img
               src="https://i.postimg.cc/y8vC286p/Recurso-7loggoblancoconderechos.png"
               alt="icon-web"
-              width="30"
-              height="31"
-              style="max-width: initial; width: 30px; height: 31px" /></a
+              width="20"
+              height="20"
+              style="max-width: initial; width: 20px; height: 20px" /></a
           >
           <a 
             href="https://www.linkedin.com/company/colvatel/"
@@ -148,18 +147,20 @@ function generatecode(event) {
             ><img
               src="https://i.postimg.cc/0NZkBGsD/logo-linkedin.png"
               alt="icon-linkedin"
-              width="30"
-              height="31"
-              style="max-width: initial; width: 30px; height: 31px"
+              width="20"
+              height="20"
+              style="max-width: initial; width: 20px; height: 20px"
             />
           </a>
           <p style="
           font-family: Tahoma;
-          font-size: 14px;
+          font-size: 8px;
           font-weight: 500;
           color: #2e74b5;
-          margin: 10px 0;
-        ">Comprometidos brindando servicios de alta calidad</p>
+          margin: 3px 0;
+        ">Los correos recibidos no implican respuesta inmediata si son
+        enviados fuera de la jornada laboral, en cumplimiento con la
+        Ley 2191 de desconexión laboral</p>
         </td>
       </tr>
     </tbody>
@@ -170,27 +171,26 @@ function generatecode(event) {
     data = code;
   } else {
     // Si la clase "firma2" no se encuentra en la lista de clases de previewsvg genera código HTML
-    let code = [`<table style="max-height: 200px">
+    let code = [`<table style="max-height: 180px">
     <tbody>
       <tr>
         <td style="padding: 20px">
           <img
-            src="https://i.postimg.cc/wBqJNvvT/Recurso-1imgcolvatel.png"
+            src="https://i.postimg.cc/nVXqjmjR/logo-blanco-small.png"
             alt="img"
             id="imageSelected0"
-            width="222"
-            height="200"
-            style="max-width: initial; width: 222px; height: 200px"
+            width="250"
+            style="max-width: initial; width: 250px"
           />
         </td>
         <td style="padding: 20px">
           <p
             style="
               font-family: Tahoma;
-              font-size: 28px;
+              font-size: 24px;
               font-weight: 500;
               color: #1c396b;
-              margin: 10px 0;
+              margin: 3px 0;
             "
           >
           ${inputname}
@@ -198,10 +198,10 @@ function generatecode(event) {
           <p
             style="
             font-family: Tahoma;
-              font-size: 18px;
+              font-size: 14px;
               font-weight: 500;
               color: #365a8e;
-              margin: 10px 0;
+              margin: 3px 0;
             "
           >
           ${inputposition}
@@ -209,10 +209,10 @@ function generatecode(event) {
           <p
             style="
             font-family: Tahoma;
-              font-size: 14px;
+              font-size: 12px;
               font-weight: 500;
               color: #2e74b5;
-              margin: 10px 0;
+              margin: 3px 0;
             "
           >
             PBX: (601) 4387000
@@ -220,10 +220,10 @@ function generatecode(event) {
           <p
             style="
             font-family: Tahoma;
-              font-size: 14px;
+              font-size: 12px;
               font-weight: 500;
               color: #2e74b5;
-              margin: 10px 0;
+              margin: 3px 0;
             "
           >
             Celular: ${inputtel}
@@ -237,9 +237,9 @@ function generatecode(event) {
             <img
               src="https://i.postimg.cc/9MFMm8pL/logo-web.png"
               alt="icon-web"
-              width="30"
-              height="31"
-              style="max-width: initial; width: 30px; height: 31px" /></a
+              width="20"
+              height="20"
+              style="max-width: initial; width: 20px; height: 20px" /></a
           >
           <a
             href="https://www.colvatel.com/"
@@ -250,9 +250,9 @@ function generatecode(event) {
             <img
               src="https://i.postimg.cc/y8vC286p/Recurso-7loggoblancoconderechos.png"
               alt="icon-web"
-              width="30"
-              height="31"
-              style="max-width: initial; width: 30px; height: 31px" /></a
+              width="20"
+              height="20"
+              style="max-width: initial; width: 20px; height: 20px" /></a
           >
           <a 
             href="https://www.linkedin.com/company/colvatel/"
@@ -262,18 +262,20 @@ function generatecode(event) {
             ><img
               src="https://i.postimg.cc/0NZkBGsD/logo-linkedin.png"
               alt="icon-linkedin"
-              width="30"
-              height="31"
-              style="max-width: initial; width: 30px; height: 31px"
+              width="20"
+              height="20"
+              style="max-width: initial; width: 20px; height: 20px"
             />
           </a>
           <p style="
           font-family: Tahoma;
-          font-size: 12px;
+          font-size: 8px;
           font-weight: 500;
           color: #2e74b5;
-          margin: 10px 0;
-        ">Comprometidos brindando servicios de alta calidad</p>
+          margin: 3px 0;
+        ">Los correos recibidos no implican respuesta inmediata si son
+        enviados fuera de la jornada laboral, en cumplimiento con la
+        Ley 2191 de desconexión laboral</p>
         </td>
       </tr>
     </tbody>

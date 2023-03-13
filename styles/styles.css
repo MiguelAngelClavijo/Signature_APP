@@ -15,9 +15,9 @@
   --colvatel-secondary: #365a8e;
   --colvatel-tertiary: #c1d8fe;
   --white: #ffffff;
-  --sm: 14px;
-  --md: 18px;
-  --lg: 28px;
+  --sm: 12px;
+  --md: 14px;
+  --lg: 24px;
 }
 
 body {
@@ -147,8 +147,9 @@ button {
   margin-left: 90px;
   margin-top: 10px;
   border: 1px solid var(--colvatel-primary);
-  border-radius: 0 20px 20px 0;
-  height: 200px;
+  border-radius: 20px;
+  height: 180px;
+  align-items: center;
 }
 
 .preview-title {
@@ -201,7 +202,7 @@ button {
   border-radius: 0;
 }
 
-.paralelogramo {
+/* .paralelogramo {
   position: relative;
   background: linear-gradient(
     29.1deg,
@@ -223,13 +224,23 @@ button {
   justify-content: center;
   z-index: -1;
   overflow: hidden;
+} */
+
+.paralelogramo{
+  position: relative;
+  height: 200px;
+  width: 350px;
+  right: 150px;
+  justify-content: center;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .logo-colvatel {
   position: relative;
-  top: -115px;
-  left: 8px;
-  width: 180px;
+  top: -205px;
+  left: 0;
+  width: 300px;
   z-index: 2;
   align-self: center;
 }
@@ -238,7 +249,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 7px;
+  gap: 3px;
 }
 
 .text-container > p {
@@ -247,6 +258,8 @@ button {
 
 .Frase {
   margin: 0;
+  font-size: 9px !important;
+  width: 250px;
 }
 
 .text-container p:nth-child(1) {
@@ -290,8 +303,8 @@ button {
 .icon-tel,
 .icon-linkedin {
   margin: 0 20px 0 0;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 /*--------------------------------------------------------------------------------------------*/
