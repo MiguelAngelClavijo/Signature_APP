@@ -289,7 +289,7 @@ function generatecode(event) {
           color: #2e74b5;
           margin: 3px 0;
         ">fuera de la jornada laboral, en cumplimiento con la
-        Ley 2191 de desconexión laboral</p>v
+        Ley 2191 de desconexión laboral</p>
         </td>
       </tr>
     </tbody>
