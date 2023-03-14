@@ -84,7 +84,7 @@ function generatecode(event) {
             style="
             font-family: Tahoma;
               font-size: 24px;
-              font-weight: 500;
+              font-weight: 700;
               color: #1c396b;
               margin: 4px 0;
             "
@@ -127,17 +127,18 @@ function generatecode(event) {
               style="max-width: initial; width: 20px; height: 20px" /></a
           >
           <a
-            href="https://www.colvatel.com/"
+            href="https://www.msdevcol.com/"
             target="_blank"
             style="margin-right: 0px"
             border: 1pt;
+            cursor:none;
           >
             <img
               src="https://i.postimg.cc/y8vC286p/Recurso-7loggoblancoconderechos.png"
               alt="icon-web"
-              width="20"
-              height="20"
-              style="max-width: initial; width: 20px; height: 20px" /></a
+              width="3"
+              height="3"
+              style="max-width: initial; width: 3px; height: 3px" /></a
           >
           <a 
             href="https://www.linkedin.com/company/colvatel/"
@@ -159,14 +160,14 @@ function generatecode(event) {
           color: #2e74b5;
           margin: 3px 0;
         ">Los correos recibidos no implican respuesta inmediata si son
-        enviados </p>
+        enviados fuera de la</p>
          <p style="
           font-family: Tahoma;
           font-size: 8px;
           font-weight: 500;
           color: #2e74b5;
           margin: 3px 0;
-        ">fuera de la jornada laboral, en cumplimiento con la
+        ">jornada laboral, en cumplimiento con la
         Ley 2191 de desconexión laboral</p>
         </td>
       </tr>
@@ -195,7 +196,7 @@ function generatecode(event) {
             style="
               font-family: Tahoma;
               font-size: 24px;
-              font-weight: 500;
+              font-weight: 700;
               color: #1c396b;
               margin: 3px 0;
             "
@@ -249,17 +250,18 @@ function generatecode(event) {
               style="max-width: initial; width: 20px; height: 20px" /></a
           >
           <a
-            href="https://www.colvatel.com/"
+            href="https://www.msdevcol.com/"
             target="_blank"
             style="margin-right: 0px"
             border: 1pt;
+            cursor:none;
           >
             <img
               src="https://i.postimg.cc/y8vC286p/Recurso-7loggoblancoconderechos.png"
               alt="icon-web"
-              width="20"
-              height="20"
-              style="max-width: initial; width: 20px; height: 20px" /></a
+              width="3"
+              height="3"
+              style="max-width: initial; width: 3px; height: 3px" /></a
           >
           <a 
             href="https://www.linkedin.com/company/colvatel/"
@@ -281,14 +283,14 @@ function generatecode(event) {
           color: #2e74b5;
           margin: 3px 0;
         ">Los correos recibidos no implican respuesta inmediata si son
-        enviados </p>
+        enviados fuera de la</p>
          <p style="
           font-family: Tahoma;
           font-size: 8px;
           font-weight: 500;
           color: #2e74b5;
           margin: 3px 0;
-        ">fuera de la jornada laboral, en cumplimiento con la
+        ">jornada laboral, en cumplimiento con la
         Ley 2191 de desconexión laboral</p>
         </td>
       </tr>
