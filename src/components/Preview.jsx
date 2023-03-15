@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { labelPropInfo } from "@data/data";
 import "@styles/Preview.css";
+import logo from "@assets/logo_small.svg";
+import web from "@assets/icon_web.svg";
+import linkedin from "@assets/icon_linkedin.svg";
+import phone from "@assets/icon_phone.svg";
+import telephone from "@assets/icon_telephone.svg";
 
 const Preview = ({ textProp }) => {
   var pTextProp = textProp;
@@ -13,16 +18,35 @@ const Preview = ({ textProp }) => {
   });
 
   return (
-    <section className="content-titlep">
-      {pGeneration}
-      <p>PBX: (601) 438 7000</p>
-      <a href="https://www.colvatel.com" target="_blank">
-        <img class="icon-tel" src="./assets/Recurso 1web.svg" />
-      </a>
-      <a href="https://www.linkedin.com/company/colvatel/" target="_blank">
-        <img class="icon-linkedin" src="./assets/Recurso 2linkedin.svg" />
-      </a>
-      <p>Comprometidos brindando servicios de alta calidad</p>
+    <section className="preview">
+      <div class="logo">
+        <img class="logo-colvatel" src={logo} alt="logo" />
+      </div>
+      <div className="text-container">
+        <p id="Name">{textProp[0] || labelPropInfo[0].placeholder}</p>
+        <p id="Position">{textProp[1] || labelPropInfo[1].placeholder}</p>
+        <p id="Tel">
+          <img id="Phone" src={phone}></img>
+          {textProp[2] || labelPropInfo[2].placeholder}
+        </p>
+        <p id="PBX">
+          <img id="Telephone" src={telephone}></img>
+          (601) 438 7000
+        </p>
+        <div className="icon-container">
+          <a href="https://www.colvatel.com" target="_blank">
+            <img class="icon-tel" src={web} />
+          </a>
+          <a href="https://www.linkedin.com/company/colvatel/" target="_blank">
+            <img class="icon-linkedin" src={linkedin} />
+          </a>
+        </div>
+        <p id="Frase">
+          Los correos recibidos no implican respuesta inmediata si son enviados
+          fuera de la jornada laboral, en cumplimiento con la Ley 2191 de
+          desconexión laboral
+        </p>
+      </div>
     </section>
   );
 };

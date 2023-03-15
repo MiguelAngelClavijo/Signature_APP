@@ -1,93 +1,19 @@
+@font-face {
+  font-family: Tahoma;
+  src: url(../assets/Tahoma\ Regular\ font.ttf);
+}
+
 .preview {
   display: flex;
-  width: 700px;
-  margin-left: 90px;
-  margin-top: 10px;
-  border: 1px solid var(--colvatel-primary);
-  border-radius: 0 20px 20px 0;
+  width: 550px;
+  border: 1px solid #1c396b;
+  border-radius: 20px;
   height: 200px;
 }
 
-.preview-title {
-  display: flex;
-  font-size: var(--md);
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 90px;
-  color: var(--colvatel-primary);
-  text-align: left;
-}
-
-.buttons-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.buttons-signature {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.btn-signature1,
-.btn-signature2 {
-  color: var(--white);
-  background-color: var(--colvatel-primary);
-  border: none;
-  font-size: var(--sm);
-  font-weight: 700;
-  border-radius: 8px;
-  padding: 15px;
-  width: 150px;
-  margin: 20px 0 20px 20px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  box-sizing: border-box;
-  transition: all 0.3s;
-}
-
-/*--------------------------------------------------------------------------------------------*/
-/*Estilos del preview*/
-.container-deg {
-  position: relative;
-  height: 208px;
-  width: 270px;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.paralelogramo {
-  position: relative;
-  background: linear-gradient(
-    29.1deg,
-    #1b396a 10.72%,
-    #1a3a6b 32.05%,
-    #183f72 39.62%,
-    #15487e 45.13%,
-    #11548f 49.26%,
-    #0b64a5 53.39%,
-    #086fb3 54.76%,
-    #0d5f9d 60.27%,
-    #174378 70.59%,
-    #1b396a 76.1%
-  );
-  height: 200px;
-  width: 350px;
-  right: 150px;
-  transform: skew(-20deg);
-  justify-content: center;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.logo-colvatel {
-  position: relative;
-  top: -115px;
-  left: 8px;
-  width: 180px;
-  z-index: 2;
+.logo {
+  position: flex;
+  width: 280px;
   align-self: center;
 }
 
@@ -95,272 +21,52 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 7px;
+  gap: 5px;
 }
 
 .text-container > p {
+  font-family: Tahoma;
   margin: 0;
-}
-
-.Frase {
-  margin: 0;
-}
-
-.text-container p:nth-child(1) {
-  font-size: var(--lg);
-  font-weight: 500;
-  color: var(--colvatel-primary);
-}
-
-.text-container {
-  height: 200px;
-}
-
-.text-container p:nth-child(2) {
-  font-size: var(--md);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container p:nth-child(3) {
-  font-size: var(--sm);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container p:nth-child(4) {
-  font-size: var(--sm);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container p:nth-child(5) {
-  font-size: var(--sm);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container a {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .icon-tel,
 .icon-linkedin {
-  margin: 0 20px 0 0;
-  width: 30px;
-  height: 30px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
 }
 
-/*--------------------------------------------------------------------------------------------*/
-/*Animacion container preview*/
-.firma1 {
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
-
-.container-deg {
-  transition: all 0.5s ease-in-out;
-}
-
-.img-change {
-  transition: all 0.5s ease-in-out;
-}
-
-.logo-colvatel {
-  transition: all 0.5s ease-in-out;
-}
-
-.firma1 {
-  transition: all 0.5s ease-in-out;
-  display: fle;
-}
-
-.firma2 {
-  transition: all 0.5s ease-in-out;
-  display: none;
-}
-.preview {
-  display: flex;
-  width: 700px;
-  margin-left: 90px;
-  margin-top: 10px;
-  border: 1px solid var(--colvatel-primary);
-  border-radius: 0 20px 20px 0;
-  height: 200px;
-}
-
-.preview-title {
-  display: flex;
-  font-size: var(--md);
+#Name {
+  font-size: 24px;
   font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 90px;
-  color: var(--colvatel-primary);
-  text-align: left;
+  color: #1c396b;
 }
 
-.buttons-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+#Position {
+  font-size: 14px;
+  font-weight: 500;
+  color: #365a8e;
 }
 
-.buttons-signature {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+#Tel,
+#PBX {
+  font-size: 12px;
+  font-weight: 500;
+  color: #365a8e;
 }
 
-.btn-signature1,
-.btn-signature2 {
-  color: var(--white);
-  background-color: var(--colvatel-primary);
-  border: none;
-  font-size: var(--sm);
-  font-weight: 700;
-  border-radius: 8px;
-  padding: 15px;
-  width: 150px;
-  margin: 20px 0 20px 20px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  box-sizing: border-box;
-  transition: all 0.3s;
-}
-
-/*--------------------------------------------------------------------------------------------*/
-/*Estilos del preview*/
-.container-deg {
-  position: relative;
-  height: 208px;
-  width: 270px;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.paralelogramo {
-  position: relative;
-  background: linear-gradient(
-    29.1deg,
-    #1b396a 10.72%,
-    #1a3a6b 32.05%,
-    #183f72 39.62%,
-    #15487e 45.13%,
-    #11548f 49.26%,
-    #0b64a5 53.39%,
-    #086fb3 54.76%,
-    #0d5f9d 60.27%,
-    #174378 70.59%,
-    #1b396a 76.1%
-  );
-  height: 200px;
-  width: 350px;
-  right: 150px;
-  transform: skew(-20deg);
-  justify-content: center;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.logo-colvatel {
-  position: relative;
-  top: -115px;
-  left: 8px;
-  width: 180px;
-  z-index: 2;
-  align-self: center;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 7px;
-}
-
-.text-container > p {
+#Frase {
   margin: 0;
+  font-size: 8px;
+  width: 250px;
+  color: #365a8e;
 }
 
-.Frase {
-  margin: 0;
-}
-
-.text-container p:nth-child(1) {
-  font-size: var(--lg);
-  font-weight: 500;
-  color: var(--colvatel-primary);
-}
-
-.text-container {
-  height: 200px;
-}
-
-.text-container p:nth-child(2) {
-  font-size: var(--md);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container p:nth-child(3) {
-  font-size: var(--sm);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container p:nth-child(4) {
-  font-size: var(--sm);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container p:nth-child(5) {
-  font-size: var(--sm);
-  font-weight: 500;
-  color: var(--colvatel-secondary);
-}
-
-.text-container a {
-  text-decoration: none;
-}
-
-.icon-tel,
-.icon-linkedin {
-  margin: 0 20px 0 0;
-  width: 30px;
-  height: 30px;
-}
-
-/*--------------------------------------------------------------------------------------------*/
-/*Animacion container preview*/
-.firma1 {
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
-
-.container-deg {
-  transition: all 0.5s ease-in-out;
-}
-
-.img-change {
-  transition: all 0.5s ease-in-out;
-}
-
-.logo-colvatel {
-  transition: all 0.5s ease-in-out;
-}
-
-.firma1 {
-  transition: all 0.5s ease-in-out;
-  display: fle;
-}
-
-.firma2 {
-  transition: all 0.5s ease-in-out;
-  display: none;
+#Phone,
+#Telephone {
+  width: 15px;
+  height: 15px;
+  padding-right: 10px;
 }
