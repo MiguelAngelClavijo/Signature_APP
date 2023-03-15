@@ -48,6 +48,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
                 font-weight: 500;
                 color: #2e74b5;
                 margin: 0 4px 0 0;
+                vertical-align: middle;
               "
             >
             <img
@@ -75,7 +76,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               alt="img"
               id="imageSelected0"
               width="10"
-              style="max-width: initial; width: 10px; vertical-align: middle;"
+              style="max-width: initial; width: 10px; vertical-align: middle"
             />
             ${inputtel}
             </p>
