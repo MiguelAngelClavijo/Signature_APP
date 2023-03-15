@@ -3,7 +3,7 @@ function firmaSinNumero(inputname, inputposition) {
     [`<table style="max-height: 180px">
       <tbody>
         <tr>
-          <td style="padding: 0px">
+          <td style="padding: 0px; vertical-align: middle">
             <img
             src="https://i.postimg.cc/SQ3vB6nj/logo-blanco-small.png"
               alt="img"
@@ -12,7 +12,7 @@ function firmaSinNumero(inputname, inputposition) {
               style="max-width: initial; width: 150px"
             />
           </td>
-          <td style="padding: 5px">
+          <td style="padding: 5px; vertical-align: middle">
             <p
               style="
               font-family: Tahoma;
@@ -42,6 +42,7 @@ function firmaSinNumero(inputname, inputposition) {
                 font-weight: 500;
                 color: #2e74b5;
                 margin: 3px 0;
+                vertical-align: middle;
               "
             >
             <img
@@ -49,7 +50,7 @@ function firmaSinNumero(inputname, inputposition) {
               alt="img"
               id="imageSelected0"
               width="12"
-              style="max-width: initial; width: 12px"
+              style="max-width: initial; width: 12px; vertical-align: middle"
             />
             (601) 4387000
             </p>
