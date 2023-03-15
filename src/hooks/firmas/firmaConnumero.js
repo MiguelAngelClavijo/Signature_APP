@@ -8,8 +8,8 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               src="https://i.postimg.cc/SQ3vB6nj/logo-blanco-small.png"
               alt="img"
               id="imageSelected0"
-              width="150"
-              style="max-width: initial; width: 150px"
+              width="170"
+              style="max-width: initial; width: 170px"
             />
           </td>
           <td style="padding: 5px; vertical-align: middle">
