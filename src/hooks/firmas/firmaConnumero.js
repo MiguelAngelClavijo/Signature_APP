@@ -1,22 +1,22 @@
-function firmaConNumero (inputname,inputposition,inputtel) {
-    return(
-      [`<table style="max-height: 180px">
+function firmaConNumero(inputname, inputposition, inputtel) {
+  return (
+    [`<table style="max-height: 180px">
       <tbody>
         <tr>
-          <td style="padding: 20px">
+          <td style="padding: 0px; vertical-align:center">
             <img
-              src="https://i.postimg.cc/nVXqjmjR/logo-blanco-small.png"
+              src="https://i.postimg.cc/SQ3vB6nj/logo-blanco-small.png"
               alt="img"
               id="imageSelected0"
-              width="250"
-              style="max-width: initial; width: 250px"
+              width="150"
+              style="max-width: initial; width: 150px"
             />
           </td>
-          <td style="padding: 20px">
+          <td style="padding: 5px; vertical-align:center">
             <p
               style="
                 font-family: Tahoma;
-                font-size: 24px;
+                font-size: 16px;
                 font-weight: 700;
                 color: #1c396b;
                 margin: 3px 0;
@@ -27,7 +27,7 @@ function firmaConNumero (inputname,inputposition,inputtel) {
             <p
               style="
               font-family: Tahoma;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 500;
                 color: #365a8e;
                 margin: 3px 0;
@@ -35,27 +35,42 @@ function firmaConNumero (inputname,inputposition,inputtel) {
             >
             ${inputposition}
             </p>
+            
             <p
               style="
               font-family: Tahoma;
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: 500;
                 color: #2e74b5;
-                margin: 3px 0;
+                margin: 0 3px 0 0;
               "
             >
-              PBX: (601) 4387000
+            <img
+              src="https://i.postimg.cc/v8hW9bsy/telephone.png"
+              alt="img"
+              id="imageSelected0"
+              width="12"
+              style="max-width: initial; width: 12px"
+            />
+            (601) 4387000
             </p>
             <p
               style="
               font-family: Tahoma;
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: 500;
                 color: #2e74b5;
                 margin: 3px 0;
               "
             >
-              Celular: ${inputtel}
+            <img
+              src="https://i.postimg.cc/jj8hTTSt/phone.png"
+              alt="img"
+              id="imageSelected0"
+              width="12"
+              style="max-width: initial; width: 12px"
+            />
+            ${inputtel}
             </p>
             <a
               href="https://www.colvatel.com/"
@@ -99,7 +114,7 @@ function firmaConNumero (inputname,inputposition,inputtel) {
             </a>
             <p style="
             font-family: Tahoma;
-            font-size: 8px;
+            font-size: 7px;
             font-weight: 500;
             color: #2e74b5;
             margin: 3px 0;
@@ -107,7 +122,7 @@ function firmaConNumero (inputname,inputposition,inputtel) {
           enviados fuera de la</p>
            <p style="
             font-family: Tahoma;
-            font-size: 8px;
+            font-size: 7px;
             font-weight: 500;
             color: #2e74b5;
             margin: 3px 0;
@@ -118,6 +133,6 @@ function firmaConNumero (inputname,inputposition,inputtel) {
       </tbody>
     </table>
   `]
-    )
+  )
 }
-export {firmaConNumero}
+export { firmaConNumero }

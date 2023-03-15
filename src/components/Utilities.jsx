@@ -4,6 +4,7 @@ import { Form } from "@containers/Form";
 import { labelPropInfo } from "@data/data";
 import "@styles/Utilities.css";
 import { useGenerarFirma } from "../hooks/useGenerarFirma";
+import { motion } from "framer-motion";
 
 const Utilities = () => {
   const initial = labelPropInfo.map((i) => {
@@ -12,6 +13,7 @@ const Utilities = () => {
 
   const [textPreview, setTextPreview] = useState(initial);
   const [seleccionarFirma, setSeleccionarFirma] = useState(true);
+  const [clicked, setClicked] = useState(false);
 
   return (
     <section className="Utilities">
@@ -47,17 +49,34 @@ const Utilities = () => {
       <div className="buttons-end">
         <button
           className="Primary-button"
-          onClick={() =>
+          onClick={() => {
             useGenerarFirma(
               seleccionarFirma,
               textPreview[0],
               textPreview[1],
               textPreview[2]
-            )
-          }
+            );
+            setClicked(true);
+            setTimeout(() => {
+              setClicked(false);
+            }, 1000);
+          }}
         >
           Copiar Firma
         </button>
+        <motion.div
+          id="alert"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: clicked ? 1 : 0, scale: clicked ? 1 : 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            duration: 0.2,
+          }}
+        >
+          ¡ Firma Copiada !
+        </motion.div>
       </div>
     </section>
   );

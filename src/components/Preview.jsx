@@ -7,12 +7,12 @@ import linkedin from "@assets/icon_linkedin.svg";
 import phone from "@assets/icon_phone.svg";
 import telephone from "@assets/icon_telephone.svg";
 
-const RenderTel = function (seleccionarFirma) {
-  if (seleccionarFirma.seleccionarFirma == true) {
+const RenderTel = function ({ seleccionarFirma, textProp }) {
+  if (seleccionarFirma == true) {
     return (
-      <p id="PBX">
-        <img id="Telephone" src={telephone}></img>
-        (601) 438 7000
+      <p id="Tel">
+        <img id="Phone" src={phone}></img>
+        {textProp[2] || labelPropInfo[2].placeholder}
       </p>
     );
   } else {
@@ -38,11 +38,11 @@ const Preview = ({ textProp, seleccionarFirma }) => {
       <div className="text-container">
         <p id="Name">{textProp[0] || labelPropInfo[0].placeholder}</p>
         <p id="Position">{textProp[1] || labelPropInfo[1].placeholder}</p>
-        <p id="Tel">
-          <img id="Phone" src={phone}></img>
-          {textProp[2] || labelPropInfo[2].placeholder}
+        <RenderTel textProp={pTextProp} seleccionarFirma={seleccionarFirma} />
+        <p id="PBX">
+          <img id="Telephone" src={telephone}></img>
+          (601) 438 7000
         </p>
-        <RenderTel seleccionarFirma={seleccionarFirma} />
         <div className="icon-container">
           <a href="https://www.colvatel.com" target="_blank">
             <img className="icon-tel" src={web} />

@@ -11,7 +11,7 @@ export const labelPropInfo = [
         text: "Cargo",
         idName: "GET-position",
         name: "position",
-        placeholder: "Practicante Universitario",
+        placeholder: "Practicante universitario",
     },
     {
         id: 3,

@@ -14,8 +14,19 @@
 .buttons-end {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 30px;
-  gap: 400px;
+  gap: 0px;
+  align-items: center;
+}
+
+#alert {
+  font-size: 26px;
+  color: #1c396b;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .disabled {

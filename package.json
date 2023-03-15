@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
     "build": "webpack --mode production"
-    
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,7 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
-    "framer-motion": "^10.0.1",
+    "framer-motion": "^10.3.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "react": "^18.2.0",
@@ -47,4 +46,3 @@
     "style-loader": "^3.3.1"
   }
 }
-
