@@ -46,7 +46,7 @@ function firmaSinNumero(inputname, inputposition) {
                 font-size: 10px;
                 font-weight: 500;
                 color: #2e74b5;
-                margin: 3px 0;
+                margin: 4px 0;
                 vertical-align: middle;
               "
             >
