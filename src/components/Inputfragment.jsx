@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Inputfragment = ({ labelProp, inputProp }) => {
+const Inputfragment = ({ labelProp, Preview, indexProp }) => {
   return (
     <>
       <label>{labelProp.text}</label>
       <input
         type="text"
-        id={inputProp.idName}
-        name={inputProp.name}
-        placeholder={inputProp.placeholder}
+        id={labelProp.idName}
+        name={labelProp.name}
+        placeholder={labelProp.placeholder}
+        onChange={function (e) {
+          Preview(indexProp, e.target.value, labelProp.placeholder);
+        }}
       />
     </>
   );

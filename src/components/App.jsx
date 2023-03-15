@@ -1,17 +1,13 @@
 import React from "react";
 import "@styles/global.scss";
 import { Header } from "./Header";
-import { Form } from "@containers/Form";
-import { Preview } from "./Preview";
+import { Utilities } from "./Utilities";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <section className="contain">
-        <Form />
-        <Preview />
-      </section>
+      <Utilities />
     </div>
   );
 };

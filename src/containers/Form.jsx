@@ -1,50 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Inputfragment } from "@components/Inputfragment";
 import "@styles/Form.css";
+import { labelPropInfo } from "@data/data";
 
-const labelPropInfo = [
-  {
-    id: 1,
-    text: "Nombre completo",
-  },
-  {
-    id: 2,
-    text: "Cargo",
-  },
-  {
-    id: 3,
-    text: "Número de celular",
-  },
-];
+const Form = ({ CTM }) => {
+  var Num = [];
+  const [textPreview, setTextPreview] = useState(Num);
 
-const inputPropInfo = [
-  {
-    idName: "GET-name",
-    name: "name",
-    placeholder: "Miguel Ángel Clavijo",
-  },
-  {
-    idName: "GET-position",
-    name: "position",
-    placeholder: "Practicante Universitario",
-  },
-  {
-    idName: "GET-tel",
-    name: "tel",
-    placeholder: "305 267 0670",
-  },
-];
+  function textChange(index, t) {
+    const nextCount = textPreview.map((c, i) => {
+      if (i == index) {
+        c = t;
+        return c;
+      } else {
+        return c;
+      }
+    });
+    setTextPreview(nextCount);
+    CTM(nextCount);
+  }
 
-const Form = () => {
   const inputGeneration = labelPropInfo.map((i, index) => {
+    Num.push("");
     return (
       <Inputfragment
+        indexProp={index}
+        Preview={function (position, t) {
+          textChange(position, t);
+        }}
         key={i.id}
         labelProp={i}
-        inputProp={inputPropInfo[index]}
       />
     );
   });
+
   return (
     <div className="form-contain">
       <form>{inputGeneration}</form>
