@@ -7,20 +7,6 @@ import linkedin from "@assets/icon_linkedin.svg";
 import phone from "@assets/icon_phone.svg";
 import telephone from "@assets/icon_telephone.svg";
 
-const nameTextParse = () => {
-  let name = String(textProp[0]).toLowerCase();
-  let names = name.split(" ");
-  let upperChar = names.map((str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  });
-  let fullname = "";
-  for (var i = 0; i < upperChar.length; i++) {
-    fullname = fullname + " " + upperChar[i];
-  }
-  return fullname;
-};
-var titleText = nameTextParse();
-
 const RenderTel = function ({ seleccionarFirma, textProp }) {
   if (seleccionarFirma == true) {
     return (
@@ -43,6 +29,20 @@ const Preview = ({ textProp, seleccionarFirma }) => {
       </p>
     );
   });
+
+  const nameTextParse = () => {
+    let name = String(textProp[0]).toLowerCase();
+    let names = name.split(" ");
+    let upperChar = names.map((str) => {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    });
+    let fullname = "";
+    for (var i = 0; i < upperChar.length; i++) {
+      fullname = fullname + " " + upperChar[i];
+    }
+    return fullname;
+  };
+  var titleText = nameTextParse();
 
   return (
     <section className="preview">
