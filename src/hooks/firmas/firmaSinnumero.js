@@ -49,7 +49,7 @@ function firmaSinNumero(inputname, inputposition) {
               "
             >
             <img
-              src="https://i.postimg.cc/8zFj4Y1c/telephone.png"
+              src="https://i.postimg.cc/DZJ42zWF/telephone.png"
               alt="img"
               id="imageSelected0"
               width="14"

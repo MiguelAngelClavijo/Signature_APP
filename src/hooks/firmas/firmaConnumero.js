@@ -49,7 +49,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               "
             >
             <img
-              src="https://i.postimg.cc/8zFj4Y1c/telephone.png"
+              src="https://i.postimg.cc/DZJ42zWF/telephone.png"
               alt="img"
               id="imageSelected0"
               width="14"
@@ -69,7 +69,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               "
             >
             <img
-              src="https://i.postimg.cc/mrzCcDcd/cellphone.png"
+              src="https://i.postimg.cc/T3sRTJnL/cellphone.png"
               alt="img"
               id="imageSelected0"
               width="14"
