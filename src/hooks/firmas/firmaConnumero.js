@@ -58,7 +58,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               width="16"
               style="max-width: initial; width: 16px; vertical-align: middle"
             />
-            (601) 438 7000
+            601 438 7000
             </p>
             <p
               style="
@@ -67,7 +67,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
                 font-size: 10px;
                 font-weight: 500;
                 color: #2e74b5;
-                margin: 4px 0 4px 2px;
+                margin: 4px 0;
                 vertical-align: middle;
               "
             >
