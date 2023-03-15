@@ -15,6 +15,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
           <td style="padding: 5px; vertical-align: middle">
             <p
               style="
+              width: 190px;
                 font-family: Tahoma;
                 font-size: 15px;
                 font-weight: 700;
@@ -26,6 +27,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
             </p>
             <p
               style="
+              width: 190px;
               font-family: Tahoma;
                 font-size: 12px;
                 font-weight: 500;
@@ -38,6 +40,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
             
             <p
               style="
+              width: 190px;
               font-family: Tahoma;
                 font-size: 10px;
                 font-weight: 500;
@@ -56,6 +59,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
             </p>
             <p
               style="
+              width: 190px;
               font-family: Tahoma;
                 font-size: 10px;
                 font-weight: 500;
@@ -114,7 +118,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               />
             </a>
             <p style="
-            width: 185px;
+            width: 190px;
             font-family: Tahoma;
             font-size: 7px;
             font-weight: 500;
@@ -123,7 +127,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
           ">Los correos recibidos no implican respuesta </p>
 
           <p style="
-            width: 185px;
+            width: 190px;
             font-family: Tahoma;
             font-size: 7px;
             font-weight: 500;
@@ -132,7 +136,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
           ">inmediata si son enviados fuera de la jornada laboral,</p>
 
           <p style="
-            width: 185px;
+            width: 190px;
             font-family: Tahoma;
             font-size: 7px;
             font-weight: 500;

@@ -15,6 +15,7 @@ function firmaSinNumero(inputname, inputposition) {
           <td style="padding: 5px; vertical-align: middle">
             <p
               style="
+              width: 190px;
               font-family: Tahoma;
                 font-size: 15px;
                 font-weight: 700;
@@ -26,6 +27,7 @@ function firmaSinNumero(inputname, inputposition) {
             </p>
             <p
               style="
+              width: 190px;
               font-family: Tahoma;
                 font-size: 12px;
                 font-weight: 500;
@@ -37,6 +39,7 @@ function firmaSinNumero(inputname, inputposition) {
             </p>
             <p
               style="
+              width: 190px;
               font-family: Tahoma;
                 font-size: 10px;
                 font-weight: 500;
@@ -95,7 +98,7 @@ function firmaSinNumero(inputname, inputposition) {
               />
             </a>
             <p style="
-            width: 185px;
+            width: 190px;
             font-family: Tahoma;
             font-size: 7px;
             font-weight: 500;
@@ -104,7 +107,7 @@ function firmaSinNumero(inputname, inputposition) {
           ">Los correos recibidos no implican respuesta </p>
 
           <p style="
-            width: 185px;
+          width: 190px;
             font-family: Tahoma;
             font-size: 7px;
             font-weight: 500;
@@ -113,7 +116,7 @@ function firmaSinNumero(inputname, inputposition) {
           ">inmediata si son enviados fuera de la jornada laboral,</p>
 
           <p style="
-            width: 185px;
+          width: 190px;
             font-family: Tahoma;
             font-size: 7px;
             font-weight: 500;
