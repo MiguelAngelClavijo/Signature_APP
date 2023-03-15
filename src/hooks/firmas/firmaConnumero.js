@@ -17,7 +17,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               style="
               width: 190px;
                 font-family: Tahoma;
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 700;
                 color: #1c396b;
                 margin: 3px 0;
