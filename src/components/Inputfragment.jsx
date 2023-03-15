@@ -10,7 +10,26 @@ const Inputfragment = ({ labelProp, Preview, indexProp }) => {
         name={labelProp.name}
         placeholder={labelProp.placeholder}
         onChange={function (e) {
-          Preview(indexProp, e.target.value, labelProp.placeholder);
+          var value = e.target.value;
+          if (Number.isInteger(Number(value))) {
+            if (Number(value) == 0) {
+              Preview(indexProp, value, labelProp.placeholder);
+            } else {
+              var firsttel =
+                value.charAt(0) + value.charAt(1) + value.charAt(2);
+              var secondtel =
+                value.charAt(3) + value.charAt(4) + value.charAt(5);
+              var thirdtel =
+                value.charAt(6) +
+                value.charAt(7) +
+                value.charAt(8) +
+                value.charAt(9);
+              var telglobal = firsttel + " " + secondtel + " " + thirdtel;
+              Preview(indexProp, telglobal, labelProp.placeholder);
+            }
+          } else {
+            Preview(indexProp, value, labelProp.placeholder);
+          }
         }}
       />
     </>

@@ -1,7 +1,7 @@
 import { firmaConNumero } from "./firmas/firmaConnumero";
 import { firmaSinNumero } from "./firmas/firmaSinnumero";
 
-const blobGeneration = async(data) => {
+const blobGeneration = async (data) => {
   try {
 
     // Intentamos realizar la acción de copiar al portapapeles
@@ -24,18 +24,18 @@ const blobGeneration = async(data) => {
 
 
 function useGenerarFirma(button, inputname, inputposition, inputtel) {
-    var code;
-    // Verificar si la clase "firma2" se encuentra en la lista de clases de previewsvg
-    if (button) {
-        // Si la clase se encuentra, generar código HTML 
-         code = firmaSinNumero(inputname, inputposition)
-    } else {
-        // Si la clase "firma2" no se encuentra en la lista de clases de previewsvg genera código HTML
-        code = firmaConNumero(inputname, inputposition, inputtel)
+  var code;
+  // Verificar si la clase "firma2" se encuentra en la lista de clases de previewsvg
+  if (button) {
+    // Si la clase se encuentra, generar código HTML 
+    code = firmaConNumero(inputname, inputposition, inputtel)
+  } else {
+    // Si la clase "firma2" no se encuentra en la lista de clases de previewsvg genera código HTML
+    code = firmaSinNumero(inputname, inputposition)
 
 
-    }
-    blobGeneration(code)
+  }
+  blobGeneration(code)
 }
 
-export {useGenerarFirma}
+export { useGenerarFirma }
