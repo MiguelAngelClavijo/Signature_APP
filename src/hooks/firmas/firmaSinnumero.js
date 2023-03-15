@@ -101,9 +101,25 @@ function firmaSinNumero(inputname, inputposition) {
             font-weight: 500;
             color: #2e74b5;
             margin: 0;
-          ">Los correos recibidos no implican respuesta inmediata si son
-          enviados fuera de la jornada laboral, en cumplimiento con la
-          Ley 2191 de desconexión laboral</p>
+          ">Los correos recibidos no implican respuesta </p>
+
+          <p style="
+            width: 185px;
+            font-family: Tahoma;
+            font-size: 7px;
+            font-weight: 500;
+            color: #2e74b5;
+            margin: 0;
+          ">inmediata si son enviados fuera de la jornada laboral,</p>
+
+          <p style="
+            width: 185px;
+            font-family: Tahoma;
+            font-size: 7px;
+            font-weight: 500;
+            color: #2e74b5;
+            margin: 0;
+          ">en cumplimiento con la Ley 2191 de desconexión laboral</p>
           </td>
         </tr>
       </tbody>
