@@ -72,11 +72,11 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               "
             >
             <img
-              src="https://i.postimg.cc/c4R0N3P9/Mesa-de-trabajo-10-copia.png"
+              src="https://i.postimg.cc/BvjPQNTc/Mesa-de-trabajo-10-copia.png"
               alt="img"
               id="imageSelected0"
               width="10"
-              style="max-width: initial; width: 10px; vertical-align: middle"
+              style="max-width: initial; width: 10px"
             />
             ${inputtel}
             </p>
