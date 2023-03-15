@@ -30,27 +30,13 @@ const Preview = ({ textProp, seleccionarFirma }) => {
     );
   });
 
-  const nameTextParse = () => {
-    let name = String(textProp[0]).toLowerCase();
-    let names = name.split(" ");
-    let upperChar = names.map((str) => {
-      return str.charAt(0).toUpperCase() + str.slice(1);
-    });
-    let fullname = "";
-    for (var i = 0; i < upperChar.length; i++) {
-      fullname = fullname + " " + upperChar[i] || labelPropInfo[0].placeholder;
-    }
-    return fullname;
-  };
-  var titleText = nameTextParse();
-
   return (
     <section className="preview">
       <div className="logo">
         <img className="logo" src={logo} alt="logo" />
       </div>
       <div className="text-container">
-        <p id="Name">{titleText || labelPropInfo[0].placeholder}</p>
+        <p id="Name">{textProp[0] || labelPropInfo[0].placeholder}</p>
         <p id="Position">{textProp[1] || labelPropInfo[1].placeholder}</p>
         <RenderTel textProp={pTextProp} seleccionarFirma={seleccionarFirma} />
         <p id="PBX">
