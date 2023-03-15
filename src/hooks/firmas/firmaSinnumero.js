@@ -55,7 +55,7 @@ function firmaSinNumero(inputname, inputposition) {
               width="14"
               style="max-width: initial; width: 14px; vertical-align: middle"
             />
-            (601) 4387000
+            (601) 438 7000
             </p>
             <a
               href="https://www.colvatel.com/"
