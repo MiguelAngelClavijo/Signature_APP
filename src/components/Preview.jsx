@@ -38,7 +38,7 @@ const Preview = ({ textProp, seleccionarFirma }) => {
     });
     let fullname = "";
     for (var i = 0; i < upperChar.length; i++) {
-      fullname = fullname + " " + upperChar[i];
+      fullname = fullname + " " + upperChar[i] || labelPropInfo[0].placeholder;
     }
     return fullname;
   };

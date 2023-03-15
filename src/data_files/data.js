@@ -1,7 +1,7 @@
 export const labelPropInfo = [
     {
         id: 1,
-        text: "Nombre completo",
+        text: "Nombre",
         idName: "GET-name",
         name: "name",
         placeholder: "Miguel Ángel Clavijo",
@@ -15,7 +15,7 @@ export const labelPropInfo = [
     },
     {
         id: 3,
-        text: "Número de celular",
+        text: "Número de celular corporativo",
         idName: "GET-tel",
         name: "tel",
         placeholder: "305 267 0670",
