@@ -16,7 +16,7 @@ function firmaSinNumero(inputname, inputposition) {
             <p
               style="
               font-family: Tahoma;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 700;
                 color: #1c396b;
                 margin: 3px 0;
