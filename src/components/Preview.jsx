@@ -41,7 +41,7 @@ const Preview = ({ textProp, seleccionarFirma }) => {
         <RenderTel textProp={pTextProp} seleccionarFirma={seleccionarFirma} />
         <p id="PBX">
           <img id="Telephone" src={telephone}></img>
-          (601) 438 7000
+          601 438 7000
         </p>
         <div className="icon-container">
           <a href="https://www.colvatel.com" target="_blank">
