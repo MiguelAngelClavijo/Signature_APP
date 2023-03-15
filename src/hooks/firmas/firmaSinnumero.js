@@ -100,7 +100,7 @@ function firmaSinNumero(inputname, inputposition) {
             font-size: 7px;
             font-weight: 500;
             color: #2e74b5;
-            margin: 3px 0;
+            margin: 0;
           ">Los correos recibidos no implican respuesta inmediata si son
           enviados fuera de la jornada laboral, en cumplimiento con la
           Ley 2191 de desconexión laboral</p>
