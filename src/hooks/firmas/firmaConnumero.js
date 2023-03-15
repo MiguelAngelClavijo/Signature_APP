@@ -21,6 +21,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
                 font-weight: 700;
                 color: #1c396b;
                 margin: 3px 0;
+                vertical-align: middle;
               "
             >
             ${inputname}
@@ -33,6 +34,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
                 font-weight: 500;
                 color: #365a8e;
                 margin: 3px 0;
+                vertical-align: middle;
               "
             >
             ${inputposition}
