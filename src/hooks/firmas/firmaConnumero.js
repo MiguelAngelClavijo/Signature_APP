@@ -62,7 +62,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
             </p>
             <p
               style="
-              width: 190px;
+              
               font-family: Tahoma;
                 font-size: 10px;
                 font-weight: 500;
