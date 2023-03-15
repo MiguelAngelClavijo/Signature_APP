@@ -1,0 +1,8 @@
+footer p {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100vw;
+    color: var(--secondary-text);
+    font-size: var(--sm);
+  }

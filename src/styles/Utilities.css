@@ -1,0 +1,50 @@
+
+.Utilities {
+    width: 100%;
+    margin: 0 0 56px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Utilities-PreviewformContain{
+    display: flex;
+    gap: 200px;
+
+  }
+  .buttons-end {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 400px;
+  }
+  
+  .disabled {
+    color: var(--secondary-text);
+    border-color: var(--secondary-text);
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  
+  .Primary-button:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 3px solid var(--primary-color);
+    transform: translateY(-5px);
+  }
+  
+  .Secondary-button:hover {
+    color: var(--white);
+    background-color: var(--colvatel-primary);
+    transform: translateY(-5px);
+  }
+  
+  .btn-signature1:hover,
+  .btn-signature2:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    transform: translateY(5px);
+  }
