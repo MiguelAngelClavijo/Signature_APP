@@ -12,7 +12,7 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               style="max-width: initial; width: 170px"
             />
           </td>
-          <td style="padding: 5px; vertical-align: middle">
+          <td style="padding: 5px; vertical-align: middle;">
             <p
               style="
               width: 190px;
@@ -54,8 +54,8 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               src="https://i.postimg.cc/637rgtbK/Mesa-de-trabajo-10-copia-2.png"
               alt="img"
               id="imageSelected0"
-              width="11"
-              style="max-width: initial; width: 11px; vertical-align: middle"
+              width="10"
+              style="max-width: initial; width: 10px; vertical-align: middle"
             />
             (601) 438 7000
             </p>
@@ -74,8 +74,8 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               src="https://i.postimg.cc/BvjPQNTc/Mesa-de-trabajo-10-copia.png"
               alt="img"
               id="imageSelected0"
-              width="11"
-              style="max-width: initial; width: 11px; vertical-align: middle;"
+              width="10"
+              style="max-width: initial; width: 10px; vertical-align: middle;"
             />
             ${inputtel}
             </p>
