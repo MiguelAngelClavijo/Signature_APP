@@ -9,10 +9,8 @@ const Header = () => {
     <div className="header">
       <img src={logo} alt="icon" />
       <h1>
-        Complete los datos a continuación y seleccione el estilo de la firma,
-        para generarla presione <span>“Generar Firma”</span> y luego se
-        habilitará el botón de <span>"Copiar Firma"</span>. para que pueda ser
-        copiada y pegada en su correo. Si cuenta con número de celular
+        Complete los datos a continuación para previsualizar su firma digital
+        para copiarla haga clic en el botón <span>"Copiar Firma"</span>. Luego puede insertarla en su correo. Si cuenta con número de celular
         corporativo seleccione <span>"Firma 1"</span> y si no cuenta con número
         de celular corporativo seleccione <span>"Firma 2"</span>
       </h1>
