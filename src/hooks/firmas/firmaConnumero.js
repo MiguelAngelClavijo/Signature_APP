@@ -49,8 +49,8 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               src="https://i.postimg.cc/8zFj4Y1c/telephone.png"
               alt="img"
               id="imageSelected0"
-              width="12"
-              style="max-width: initial; width: 12px; vertical-align: middle"
+              width="14"
+              style="max-width: initial; width: 14px; vertical-align: middle"
             />
             (601) 4387000
             </p>
@@ -68,8 +68,8 @@ function firmaConNumero(inputname, inputposition, inputtel) {
               src="https://i.postimg.cc/mrzCcDcd/cellphone.png"
               alt="img"
               id="imageSelected0"
-              width="12"
-              style="max-width: initial; width: 12px; vertical-align: middle"
+              width="14"
+              style="max-width: initial; width: 14px; vertical-align: middle"
             />
             ${inputtel}
             </p>
