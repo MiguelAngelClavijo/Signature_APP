@@ -1,0 +1,59 @@
+.Utilities form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 0 0 14px 0;
+  font-size: var(--md);
+  font-weight: 400;
+}
+
+form input {
+  margin: 0 0 47px 0;
+  width: 304px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-text);
+  background-color: var(--background-field);
+  padding-left: 15px;
+  font-size: var(--sm);
+  box-sizing: border-box;
+}
+
+#GET-tel {
+  margin: 0 0 50px 0;
+}
+
+.Primary-button {
+  background: var(--primary-color);
+  border-radius: 8px;
+  width: 304px;
+  height: 52px;
+  border: none;
+  color: white;
+  margin: 0 0 37px 0;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.Secondary-button {
+  border: 3px solid var(--primary-color);
+  border-radius: 8px;
+  width: 304px;
+  height: 52px;
+  color: var(--primary-color);
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+button {
+  font-size: var(--md);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
